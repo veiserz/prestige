@@ -1,11 +1,11 @@
 import { prisma } from '../config/prisma.js';
-import { Prisma, User } from '@prisma/client';
+import { Prisma, User, EducationLevel } from '@prisma/client';
 
 export interface CreateUserInput {
   name: string;
   age: number;
   city: string;
-  educationLevel: string;
+  educationLevel: EducationLevel;
   goals: string[];
   scoreSelfGrowth: number;
 }
